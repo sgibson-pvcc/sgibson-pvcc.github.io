@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang = "en">
+    <!--
+        Name: Sherri Gibson
+        Description: This program will perform simple arithmetic in JavaScript 
+    -->
+    <head>
+        <title>Simple Arithmetic</title>
+        <script type = "text/JavaScript">
+            function calculate()
+            {
+        //define variables
+                var num1;
+                var num2;
+                var addans;
+                var subans;
+                var multans;
+                var divans;
+                var modans;
+        //get data from user
+                num1 = prompt("enter the first number:");
+                num2 = prompt("enter the second number:");
+        // perform calulations
+                addans = num1 * 1 + num2 * 1;  //make sure the number is numeric
+                subans = num1 - num2;
+                multans = num1 * num2;
+                divans = num1 / num2;
+                modans = num1 % num2;
+        //display results
+                document.write("Arithmetic Answers:");
+                document.write(addans);
+                document.write(subans);
+                document.write(multans);
+                document.write(divans);
+                document.write(modans);
+            }
+        </script>
+        </head>
+        <body>
+            <form>
+                <input type = "button" value = "click here for Arithmeticn calulations"
+                         class = "calcbutton" onclick = "calculate()" />
+            </form>
+        </body>
+ <html>
