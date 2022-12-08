@@ -22,21 +22,19 @@
                 var remainder = 0;
         //get data from user
                 numriders = prompt("enter the number of riders going on the field trip:");
-        // perform calulations
-                numbuses = math.floor(numriders/maxbusriders);  //find whole number quotient
+        // perform calculations
+                numbuses = Math.floor(numriders/maxbusriders);//find whole number quotient
                 remainder = numriders % maxbusriders;  //find whole number remainder
                 if(remainder>= 0 && remainder <6)
-                    (vanriders = remainder;)
+                    vanriders = remainder;
                 else
+                    numbus++;  //add one more bus
+         //display results
+         document.write("<h1>School Field Trip Transporatation Needs</h1>");
+         document.write("<h2>Total Number of Riders:"+numriders);
+         document.write("<hr><br />number of buses needed:"+numbuses)
+         document.write("<br />School van needed for "+vanriders   + " rider(s)</h2>");
 
-                    {numbus++;}  //add one more bus
-                
-        //display results
-                document.write("<h1>School Field Trip Transporatation Needs</h1>");
-                document.write(<h2>"Total Number of Riders:"+numriders);
-                document.write("<hr><br />number of buses needed:"+numbuses)"
-                document.write("<br />School van needed for"+vanriders   ="riders(s><h2>");
-                
             }
         </script>
         </head>
