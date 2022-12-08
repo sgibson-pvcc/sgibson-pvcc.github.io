@@ -7,8 +7,8 @@ import datetime
 
 ########################################    Define global variables ##############################
 #define tax rate and prices
-Sales_tax_rate = .055
-PR_ticket = 10.99
+SALES_TAX_RATE = .055
+PR_TICKET = 10.99
 
 #define gloobal VAriables
 num_tickets = 0
@@ -28,7 +28,7 @@ def get_user_data():
 
 def perform_calulations():
     global subtotal, sales_tax, total
-    subtotal = num_tickets * PR_ticket
+    subtotal = num_tickets * PR_TICKET
     sales_tax = subtotal * Sales_tax_rate
     total = subtotal + sales_tax
 
@@ -38,7 +38,7 @@ def display_results():
     print('Your neighborhood movie house')
     print('-------------------------------')
     print('Tickets         $ ' + format(subtotal,'8,.2f'))
-    print('Sales Tax       $ ' + format(Sales_tax_rate,'8,.2f'))
+    print('Sales Tax       $ ' + format(SALES_TAX_RATE,'8,.2f'))
     print('Total           $ ' + format(total,'8,.2f'))
     print('----------------------------------')
     print(str(datetime.datetime.now()))
