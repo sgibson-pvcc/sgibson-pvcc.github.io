@@ -29,7 +29,7 @@ def get_user_data():
 def perform_calulations():
     global subtotal, sales_tax, total
     subtotal = num_tickets * PR_TICKET
-    sales_tax = subtotal * Sales_tax_rate
+    sales_tax = subtotal * SALES_TAX_RATE
     total = subtotal + sales_tax
 
 def display_results():
@@ -38,10 +38,10 @@ def display_results():
     print('Your neighborhood movie house')
     print('-------------------------------')
     print('Tickets         $ ' + format(subtotal,'8,.2f'))
-    print('Sales Tax       $ ' + format(SALES_TAX_RATE,'8,.2f'))
+    print('Sales Tax       $ ' + format(Sales_tax,'8,.2f'))
     print('Total           $ ' + format(total,'8,.2f'))
     print('----------------------------------')
     print(str(datetime.datetime.now()))
 
     ###################################### call on main program to execute
-    main()
+main()
